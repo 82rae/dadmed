@@ -1,10 +1,61 @@
-<link rel="stylesheet" href="form.css" type="text/css">
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Script Tracker</title>
+<link rel="stylesheet" href="css/form.css" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="shortcut icon" type="image/x-icon" href="https://raecrouch.com/raer.ico">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+  
+ 
+
 <div class="body-content">
 <div class="module">
 <h1>SCRIPT TRACKER</h1>
 
-<input name="physician" required="" type="text" placeholder="Physician's Name" /> <input name="script" required="" type="text" placeholder="Script Name" /> <input name="dosage" required="" type="text" placeholder="Dosage" /> <input name="date_filled" required="" type="text" placeholder="Date Script was Filled" />
+
+
+<select name="physician" class="rae" required="" type="text" placeholder="Physician" />
+<option value="" class="rae">Physician</option>
+  <option value="Dr 1">Dr Yap</option>
+  <option value="Dr 2">Physician2</option>
+  <option value="Dr 3">Physician3</option>
+  <option value="Other Dr">Other Physician</option> </select> 
+
+<select name="script" class="rae" required="" type="text" placeholder="Script" />
+<option value="" class="rae">Script</option>
+  <option value="1">Script1</option>
+  <option value="2">Script2</option>
+  <option value="3">Script3</option>
+  <option value="4">New Script</option> </select> 
+
+<select name="dosage" class="rae" required="" type="text" placeholder="Dosage" />
+<option value="dosage" class="rae">Dosage</option>
+  <option value="30">30 Days</option>
+  <option value="60">60 Days</option>
+  <option value="90">90 Days</option> </select>
+<hr>
+
+<form action="/action_page.php">
+  Prescribed Date:
+  <input type="date" name="filled">
+</form>
+
 <div class="photo"><label>Select your photo of the Script: </label><input accept="image/*" name="photo" required="" type="file" /></div>
 <input class="btn btn-block btn-primary" name="submit" type="submit" value="Submit" /></div>
-</div>
+
+
+<footer>
+        <span style="font-size: 14px;">&nbsp  &copy; 2019 raecrouch.com</span>
+    </footer>
+
+
+ </body>
+</html>
 
